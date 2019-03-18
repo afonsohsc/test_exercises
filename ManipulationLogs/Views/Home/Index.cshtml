@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="Logs Agora" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @ViewBag.Version <br />
+        @ViewBag.Data <br />
+        @ViewBag.Fields <br />
+        <br />
+        @foreach (var item in ViewBag.ListaLogsAgora)
+        {
+            @item <br />
+        }
+    </div>
+</body>
+</html>

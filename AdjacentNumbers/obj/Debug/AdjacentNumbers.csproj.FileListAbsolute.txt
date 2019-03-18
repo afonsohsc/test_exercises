@@ -1,0 +1,7 @@
+C:\Users\Afonso Carvalho\source\repos\Exercises\AdjacentNumbers\bin\Debug\AdjacentNumbers.exe.config
+C:\Users\Afonso Carvalho\source\repos\Exercises\AdjacentNumbers\bin\Debug\AdjacentNumbers.exe
+C:\Users\Afonso Carvalho\source\repos\Exercises\AdjacentNumbers\bin\Debug\AdjacentNumbers.pdb
+C:\Users\Afonso Carvalho\source\repos\Exercises\AdjacentNumbers\obj\Debug\AdjacentNumbers.csprojAssemblyReference.cache
+C:\Users\Afonso Carvalho\source\repos\Exercises\AdjacentNumbers\obj\Debug\AdjacentNumbers.csproj.CoreCompileInputs.cache
+C:\Users\Afonso Carvalho\source\repos\Exercises\AdjacentNumbers\obj\Debug\AdjacentNumbers.exe
+C:\Users\Afonso Carvalho\source\repos\Exercises\AdjacentNumbers\obj\Debug\AdjacentNumbers.pdb
