@@ -12,9 +12,10 @@
 </head>
 <body>
     <div>
-        @ViewBag.Version <br />
-        @ViewBag.Data <br />
-        @ViewBag.Fields <br />
+        @foreach (var item in ViewBag.Version)
+        {
+            @item <br />
+        }
         <br />
         @foreach (var item in ViewBag.ListaLogsAgora)
         {

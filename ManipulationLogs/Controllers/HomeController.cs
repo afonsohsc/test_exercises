@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 
@@ -62,9 +63,20 @@ namespace ManipulationLogs.Controllers
                 logsAgora.Add('"' + providerHttp + '"' + " " + methodStatus[i] + " " + codeUri[i] + " " + pathTime[i] + " " + takenResponse[i] + " " + sizeCache[i] + " " + status[i]);
             }
 
-            ViewBag.Version = "#Version: 1.0";
-            ViewBag.Data = "#Date: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-            ViewBag.Fields = "#Fields: provider http - method status - code uri - path time - taken response - size cache - status";
+            List<string> data = new List<string>() {
+            "#Version: 1.0",
+            "#Date: " + DateTime.Now.ToLocalTime(),
+            "#Fields: provider http - method status - code uri - path time - taken response - size cache - status"};
+
+            //data.Add("#Version: 1.0");
+            //data.Add("#Date: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+            //data.Add("#Fields: provider http - method status - code uri - path time - taken response - size cache - status");
+
+            ViewBag.Version = data;
+
+            //ViewBag.Version = "#Version: 1.0";
+            //ViewBag.Data = "#Date: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            //ViewBag.Fields = "#Fields: provider http - method status - code uri - path time - taken response - size cache - status";
 
             ViewBag.ListaLogsAgora = logsAgora;
 
