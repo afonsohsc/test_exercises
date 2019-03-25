@@ -1,26 +1,56 @@
 ﻿
 @{
-    Layout = null;
+	Layout = null;
 }
+
+@model List<ManipulationLogs.Models.LogsAgora>
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <meta name="Logs Agora" content="width=device-width" />
-    <title>Index</title>
+	<meta name="Logs Agora" content="width=device-width" />
+	<title>Index</title>
 </head>
 <body>
-    <div>
-        @foreach (var item in ViewBag.Version)
-        {
-            @item <br />
-        }
-        <br />
-        @foreach (var item in ViewBag.ListaLogsAgora)
-        {
-            @item <br />
-        }
-    </div>
+	<div>
+		<p>
+			@ViewBag.Version <br />
+			@ViewBag.Data <br />
+			@ViewBag.Fields <br />
+		</p>
+
+		<table>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(modelItem => item.ProviderHttp)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.MethodStatus)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.CodeUri)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.PathTime)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.TakenResponse)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.SizeCache)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Status)
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+
+	</div>
 </body>
 </html>
